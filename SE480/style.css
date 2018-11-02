@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-family: Sans-serif;
 }
 
 #banner {
@@ -28,7 +29,6 @@ body {
 }
 
 #menu li a {
-  font-family: Sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -38,4 +38,32 @@ body {
 
 #menu li a:hover {
   background-color: #111;
+}
+
+/*                 SLIDESHOW             */
+
+#slideshow {
+  text-align: center;
+  margin: 0px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow img {
+  width: 100%;
+  height: 600px;
+}
+
+#slideshow>div {
+  position: absolute;
+  margin: 0px;
+}
+
+.message {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
