@@ -21,7 +21,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
 }
 
@@ -55,7 +54,7 @@ body {
   height: 600px;
 }
 
-#slideshow>div {
+#slideshow > div {
   position: absolute;
   margin: 0px;
 }
@@ -67,4 +66,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+}
+
+.mid {
+
+  position: absolute;
+  margin-top: 0;
+  background-color: #333;
+  width: 100%;
+  height: 500px;
 }
