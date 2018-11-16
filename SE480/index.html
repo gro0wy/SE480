@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Link with CSS-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css3clock.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/css3clock.css" />
   <title>MIGBIRD</title>
 </head>
 <!--BODY-->
@@ -79,8 +79,9 @@
                 scelerisque. Proin ut arcu luctus.</p>
         </div>
       </div>
-      <!--Clock Section-->
+      <!--Clock1-->
       <div id="clockSection">
+        <script src="javascript/jsclock.js"></script>
         <div id="liveclock" class="outer_face">
 
 <div class="marker oneseven"></div>
@@ -98,33 +99,8 @@
 
 
 
-<script type="text/javascript">
-
-
-var $hands = $('#liveclock div.hand')
-
-window.requestAnimationFrame = window.requestAnimationFrame
-                               || window.mozRequestAnimationFrame
-                               || window.webkitRequestAnimationFrame
-                               || window.msRequestAnimationFrame
-                               || function(f){setTimeout(f, 60)}
-
-
-function updateclock(){
-	var curdate = new Date()
-	var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
-	var minute_as_degree = curdate.getMinutes() / 60 * 360
-	var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
-	$hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
-	$hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
-	$hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
-	requestAnimationFrame(updateclock)
-}
-
-requestAnimationFrame(updateclock)
-
-
-</script>
+<!--Clock2-->
+<script src="javascript/jsclock.js"></script>
 <div id="liveclock" class="outer_face">
 
 <div class="marker oneseven"></div>
@@ -142,34 +118,8 @@ requestAnimationFrame(updateclock)
 
 
 
-<script type="text/javascript">
-
-
-
-var $hands = $('#liveclock div.hand')
-
-window.requestAnimationFrame = window.requestAnimationFrame
-                               || window.mozRequestAnimationFrame
-                               || window.webkitRequestAnimationFrame
-                               || window.msRequestAnimationFrame
-                               || function(f){setTimeout(f, 60)}
-
-
-function updateclock(){
-	var curdate = new Date()
-	var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
-	var minute_as_degree = curdate.getMinutes() / 60 * 360
-	var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
-	$hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
-	$hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
-	$hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
-	requestAnimationFrame(updateclock)
-}
-
-requestAnimationFrame(updateclock)
-
-
-</script>
+<!--Clock3-->
+<script src="javascript/jsclock.js"></script>
 <div id="liveclock" class="outer_face">
 
 <div class="marker oneseven"></div>
@@ -182,40 +132,10 @@ requestAnimationFrame(updateclock)
 <div class="hand minute"></div>
 <div class="hand second"></div>
 </div>
-
+<script src="javascript/jsclock.js"></script>
 </div>
 
-
-
-<script type="text/javascript">
-
-
-
-var $hands = $('#liveclock div.hand')
-
-window.requestAnimationFrame = window.requestAnimationFrame
-                               || window.mozRequestAnimationFrame
-                               || window.webkitRequestAnimationFrame
-                               || window.msRequestAnimationFrame
-                               || function(f){setTimeout(f, 60)}
-
-
-function updateclock(){
-	var curdate = new Date()
-	var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
-	var minute_as_degree = curdate.getMinutes() / 60 * 360
-	var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
-	$hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
-	$hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
-	$hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
-	requestAnimationFrame(updateclock)
-}
-
-requestAnimationFrame(updateclock)
-
-
-</script>
-      </div>
+    </div>
 
   </div>
   <!--FOOTER-->
