@@ -1,6 +1,5 @@
 .outer_face {
-    display: inline-block;
-    text-align: center;
+    text-align:center;
     position: relative;
     width: 200px; /* width of clock */
     height: 200px; /* height of clock */
@@ -137,3 +136,15 @@
     top: 0;
     background: red
     }
+
+.clocks {
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  text-align:center;
+  
+  
+    
+
+}
