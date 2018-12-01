@@ -1,4 +1,6 @@
 .outer_face {
+    display: inline-block;
+    text-align: center;
     position: relative;
     width: 200px; /* width of clock */
     height: 200px; /* height of clock */
@@ -90,7 +92,7 @@
     }
 
 .inner_face::after {
-    content: "QUARTZ";
+
     position: absolute;
     width: 100%;
     font: normal 0.8em Arial;
