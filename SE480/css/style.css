@@ -82,7 +82,7 @@ body {
 .midContainer {
   text-align: center;
   margin-top: 30px;
-  
+
 }
 
 .content{
@@ -92,7 +92,7 @@ body {
   padding: 20px;
   text-align:center;
   width:30%;
-  
+
 }
 
  .content img {
@@ -100,8 +100,14 @@ body {
   width: 200px;
 }
 
+.clocks {
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  text-align:center;
 
-
+}
 
 .footer {
   width: 100%;

@@ -1,5 +1,4 @@
 .outer_face {
-    text-align:center;
     position: relative;
     width: 200px; /* width of clock */
     height: 200px; /* height of clock */
@@ -91,7 +90,7 @@
     }
 
 .inner_face::after {
-
+    content: "";
     position: absolute;
     width: 100%;
     font: normal 0.8em Arial;
@@ -100,7 +99,7 @@
     top: 85%
     }
 
-.hand, .hand.hour {
+.hand3, .hand3.hour3 {
     position: absolute;
     width: 4px; /* width of hour hand */
     height: 30%; /* height of hour hand */
@@ -122,29 +121,17 @@
     box-shadow: 0 0 3px gray
     }
 
-.hand.minute {
+.hand3.minute3 {
     height: 45%; /* height of min hand */
     top: 5%; /* set top to 50% - height */
     width: 5px; /* width of min hand */
     margin-left: -2.5px; /* set this value to 1/2 width */
     }
 
-.hand.second {
+.hand3.second3 {
     height: 50%; /* height of sec hand */
     width: 2px; /* width of sec hand */
     margin-left: -1px; /* set this value to 1/2 width */
     top: 0;
     background: red
     }
-
-.clocks {
-  display:inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-  text-align:center;
-  
-  
-    
-
-}
