@@ -10,6 +10,27 @@
   <!--Link with CSS-->
   <link rel="stylesheet" type="text/css" href="../css/exchange.css">
   <title>MIGBIRD</title>
+  <script type="text/javascript" src="http://currencyconverter.55uk.net/currency_converter_json.js"></script>
+<script type="text/javascript">
+function getMyRates(jData) {
+if (jData == null) {
+  alert("There was a problem parsing search results.");
+  return;
+}
+var myval = jData.ResultSet;
+var mydiv = jData.xxMyDiv;
+document.getElementById(mydiv).innerHTML =  myval;
+}
+
+function myPrivateConverterMany() {
+var xxv = document.getElementById('xxvalue').value;
+var xxf = document.getElementById('xxfrom').value;
+var xxt = document.getElementById('xxto').value;
+if (xxv > 0) {
+  getExchangeRatesDiv('xxrates',xxv,xxf,xxt,'true');
+}
+}
+</script>
 </head>
 <!--BODY-->
 <body>
@@ -28,8 +49,44 @@
     </ul>
   </div>
   <h1>Exchange</h1>
+
+  CONVERT: <input id="xxvalue" value="1.00" />
+  	FROM:
+  	<select id="xxfrom">
+  		<option value="GBP">GBP - British Pound</option>
+  		<option value="EUR">EUR - Euro</option>
+  		<option value="USD">USD - U.S. Dollar</option>
+  		<option value="CAD">CAD - Canadian Dollar</option>
+  		<option value="AUD">AUD - Australian Dollar</option>
+  		<option value="JPY">JPY - Japanese Yen</option>
+  	</select>
+  	TO:
+  	<select id="xxto">
+  		<option value="EUR">EUR - Euro</option>
+  		<option value="USD">USD - U.S. Dollar</option>
+  		<option value="GBP">GBP - British Pound</option>
+  		<option value="CAD">CAD - Canadian Dollar</option>
+  		<option value="AUD">AUD - Australian Dollar</option>
+  		<option value="JPY">JPY - Japanese Yen</option>
+  	</select>
+  	<input type="button" value="GO" onclick="myPrivateConverterMany();" />
+  	<div id="xxrates"></div>
+
+
+
+  <div id="powerd"><a href="https://www.transfermate.com/" target="_blank" id="tm_add146" class="tm_add146">Powered by TransferMate</a></div>
+  <div id="demo-rate-convert"></div>
+  <script>
+      var apiTargetHtmlObj = document.getElementById("demo-rate-convert");
+      var tmScript = document.createElement("script");
+      tmScript.src = "https://www.transfermate.com/en/exchange_rates_api.asp";
+      document.getElementsByTagName("head")[0].appendChild(tmScript);
+  </script>
+  <noscript><br/><span style="color: red;">Please enable your JavaScript.</span></noscript>
   <!--FOOTER-->
+
   <div class="footer"></div>
+</body>
 </body>
 
 </html>
