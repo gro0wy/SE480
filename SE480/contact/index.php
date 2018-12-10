@@ -43,12 +43,12 @@ Dear customers,
   <!--Contact form-->
   <div class="form">
     <h2>Contact us:</h2>
-    <form class="contact-form"action="form.php" method="post">
+    <form class="contact-form" action="form.php" method="post">
       <input type="text" name="name" placeholder="Full Name">
       <input type="text" name="mail" placeholder="email@domain.com">
       <input type="text" name="subject" placeholder="Subject">
       <textarea name="message" placeholder="Message"></textarea>
-      <input type="submit" name="submit"></input>
+      <button type="submit" name="submit">SEND</button>
     </form>
   </div>
   <!--FOOTER-->
