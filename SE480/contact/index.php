@@ -51,6 +51,7 @@ Dear customers,
       <button type="submit" name="submit">SEND</button>
     </form>
   </div>
+ 
   <!--FOOTER-->
   <div class="footer"></div>
 
