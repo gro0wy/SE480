@@ -18,7 +18,7 @@
     <!--MENU-->
     <ul id="menu">
       <li><a href="../exchange/exchange.html">Exchange Tools</a></li>
-      <li><a href="../tickets/tickets.html">Tickets</a></li>
+      <li><a href="../rentCar/index.php">Rent A Car Prices</a></li>
       <li><a href="../attractions/index.php">Attractions</a></li>
       <li><a href="index.php">Contact</a></li>
     </ul>

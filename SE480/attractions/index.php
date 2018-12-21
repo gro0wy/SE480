@@ -31,7 +31,7 @@ $has_comments = (count($comments) > 0);
     <!--MENU-->
     <ul id="menu">
       <li><a href="../exchange/exchange.html">Exchange Tools</a></li>
-      <li><a href="../tickets/tickets.html">Tickets</a></li>
+      <li><a href="../rentCar/index.php">Rent A Car Prices</a></li>
       <li><a href="attractions.html">Attractions</a></li>
       <li><a href="../contact/index.php">Contact</a></li>
     </ul>
